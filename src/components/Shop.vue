@@ -1,7 +1,6 @@
 <template>
   <div class="Shop">
     这里是商店
-    <br>
   </div>
 </template>
 

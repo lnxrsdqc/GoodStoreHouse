@@ -5,30 +5,26 @@
             <router-view/>
         </el-header>
         <el-footer class="footer">
-            <el-row type="flex" justify="space-end" :gutter="20" class="footer-nav">
-              <el-col :span="6" >
-              <div class="">
-                  <p></p>
-                  <router-link to="/">商店</router-link>
-              </div>    
+            <el-row type="flex" justify="space-between" :gutter="20" class="footer-nav">
+              <el-col :xs="6" :sm="6" :md="6" :lg="6" :xl="6">
+                <div>
+                  <router-link to="/" class="shop"></router-link>  
+                </div>
               </el-col>
-              <el-col :span="6" >
-              <div class="">
-                  <p></p>
-                  <router-link to="/Category">分类</router-link>
-              </div>   
+              <el-col :xs="6" :sm="6" :md="6" :lg="6" :xl="6">
+                <div>
+                  <router-link to="/Category" class="category"></router-link>
+                </div> 
               </el-col>
-              <el-col :span="6" >
-              <div class="">
-                  <p></p>
-                  <router-link to="/Shoping">购物车</router-link>
-              </div>   
+              <el-col :xs="6" :sm="6" :md="6" :lg="6" :xl="6">
+                <div> 
+                  <router-link to="/Shoping" class="shoping"></router-link>  
+                </div> 
               </el-col>
-              <el-col :span="6" >
-              <div class="">
-                  <p></p>
-                  <router-link to="/Person">个人</router-link>
-              </div>     
+              <el-col :xs="6" :sm="6" :md="6" :lg="6" :xl="6">
+                <div>   
+                  <router-link to="/Person" class="person"></router-link>  
+                </div>  
               </el-col>
             </el-row>
         </el-footer>
@@ -43,15 +39,45 @@ export default {
 </script>
 
 <style scoped="">
-     .footer{
-        position: absolute;
-        bottom:0;
+    .footer{
+      width: 100%;
+      position:fixed;
+      bottom:10px;
      }
-     .footer-nav{
-       
+     .el-col>div{
+      width: 100%;
+      height:100%;
+      text-align: center;
+      line-height: 60px;
      }
-    a{
-
+    .el-col>div>a{
+      text-decoration: none;
+      display:inline-block;
+      width:38px;
+      height:98%;
+      vertical-align: middle;
+    }
+    .el-col>div>.shop{
+      background-image: url('./assets/imgs/Index/shop.png');
+      background-repeat: no-repeat;
+      background-size:contain; 
+    }
+    .el-col>div>.category{
+      background-image: url('./assets/imgs/Index/category.png');
+      background-repeat: no-repeat;
+      background-size:contain; 
+    }
+    .el-col>div>.shoping{
+      width:60px;
+      height:98%;
+      background-image: url('./assets/imgs/Index/shoping.png');
+      background-repeat: no-repeat;
+      background-size:contain; 
+    }
+    .el-col>div>.person{
+      background-image: url('./assets/imgs/Index/person.png');
+      background-repeat: no-repeat;
+      background-size:contain; 
     }
 </style>
 <style>
@@ -60,6 +86,8 @@ export default {
     padding: 0;
    } 
    html:{
+    width: 100%;
+    height: 100%;
     font-size: 16px;
    }
 </style>

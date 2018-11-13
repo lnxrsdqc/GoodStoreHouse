@@ -4,7 +4,7 @@ import Category from '@/components/Category'
 import Shoping from '@/components/Shoping'
 import Person from '@/components/Person'
 import Shop from '@/components/Shop'
-import Water from '@/components/Water'
+/*import Water from '@/components/Water'
 import HouseGoods from '@/components/HouseGoods'
 import AestheticProtection from '@/components/AestheticProtection'
 import Foods from '@/components/Foods'
@@ -20,7 +20,7 @@ import Sports from '@/components/Sports'
 import Book from '@/components/Book'
 import Numeral from '@/components/Numeral'
 import Shoes from '@/components/Shoes'
-import All from '@/components/All'
+import All from '@/components/All'*/
 import Index from '@/components/Index'
 
 Vue.use(Router)
@@ -36,8 +36,8 @@ export default new Router({
           path:'/Index',
           name:'Index',
           component:Index
-        },
-        {
+        }
+        /*{
           path:'/Water',
           name:'Water',
           component:Water
@@ -121,9 +121,9 @@ export default new Router({
           path:'/All',
           name:'All',
           component:All
-        }
+        }*/
       ],
-      redirect:"/"
+      redirect:"/Index"
 
     },
     {

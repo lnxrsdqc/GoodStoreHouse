@@ -1,4 +1,4 @@
-// var webpack=require('webpack')
+var webpack=require('webpack')
 'use strict'
 const path = require('path')
 const utils = require('./utils')
@@ -23,13 +23,13 @@ module.exports = {
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
   },
-  /*plugins:[
+  plugins:[
     new webpack.ProvidePlugin({
       $:"jquery",
       jQuery:"jquery",
       "window.jQuery":"jquery"
     })
-  ],*/
+  ],
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {

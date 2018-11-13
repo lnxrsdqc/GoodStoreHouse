@@ -1,7 +1,15 @@
 <template>
   <div class="Shop">
   	<el-container>
-		<el-header>
+		<el-header class="header">
+			<el-row type="flex">
+              <el-col :xs="24" :sm="24" :md="24" :lg="24">
+                <div class="search">
+                  <img src="../assets/imgs/Index/search.png" alt="">
+                  <input type="text" value="双11" class="searchContent" >
+                </div>  
+              </el-col>
+            </el-row>
 			<el-row type="flex">
 				<el-col :xs="4" :sm="4" :md="4" :lg="4">
 					<div><router-link to="/Index">首页</router-link></div>
@@ -46,7 +54,33 @@ export default {
 </script>
 
 <style scoped>
-/*.Shop{
-	text-align: center;
-}*/
+    .el-header{
+      margin-top:20px;
+    }
+    .el-header .search{
+      width: 100%;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      position: relative;
+      background-color: rgb(243,243,243);
+    } 
+    .el-header .search>img{
+      width: 26px;
+      height: 26px;
+      position: absolute;
+      left: 33%;
+      top:35%;
+    } 
+    .el-header .search>.searchContent{
+      border: none;
+      box-sizing: border-box;
+      text-align: center;
+      width:100%;
+      height:60px;
+      vertical-align: middle;
+      color: rgb(153,153,153);
+      font-size: 1rem;
+      background-color: rgb(243,243,243);
+    }  
 </style>

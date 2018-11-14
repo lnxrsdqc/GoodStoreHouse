@@ -1,9 +1,12 @@
 <template>
   <div id="GoodStoreHouse">
+    <div>
+      <router-view/>
+    </div>
     <el-container>
-        <el-main>
+        <div>
           <router-view/>
-        </el-main>
+        </div>
         <el-footer class="footer">
             <el-row type="flex" justify="space-between" :gutter="20" class="footer-nav">
               <el-col :xs="6" :sm="6" :md="6" :lg="6">
@@ -146,8 +149,6 @@ export default {
     padding: 0;
    } 
    html{
-    width: 100%;
-    height: 100%;
     font-size: 12px;
    }
    

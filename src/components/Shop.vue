@@ -4,7 +4,7 @@
 			<el-row type="flex">
               <el-col :xs="24" :sm="24" :md="24" :lg="24">
                 <div class="search">
-                	<el-button icon="el-icon-search">搜索</el-button>
+                	<router-link to="."><el-button icon="el-icon-search">搜索</el-button><router-link>
                 </div>  
               </el-col>
             </el-row>

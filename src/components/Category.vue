@@ -1,13 +1,5 @@
 <template>
   <div class="Category">
-<<<<<<< HEAD
-    <el-container>
-	  <el-header class="header">Header</el-header>
-	  <el-container>
-	    <el-aside style="width:15%;" class="aside">Aside</el-aside>
-	    <el-main class="main">Main</el-main>
-	  </el-container>
-=======
   <el-container>
 	  <el-aside style="width:30%;" class="aside">
 	  	<ul style="overflow-y: scroll;">
@@ -20,7 +12,6 @@
 	  		<div></div>
 	  	</div>
 	  </el-main>
->>>>>>> dev
 	</el-container>
   </div>
 </template>

@@ -1,15 +1,9 @@
 <template>
   <div id="GoodStoreHouse">
     <el-container>
-<<<<<<< HEAD
-        <el-main>
-          <router-view/>
-        </el-main>
-=======
         <div>
             <router-view/>
         </div>
->>>>>>> dev
         <el-footer class="footer">
             <el-row type="flex" justify="space-between" :gutter="20" class="footer-nav">
               <el-col :xs="6" :sm="6" :md="6" :lg="6">

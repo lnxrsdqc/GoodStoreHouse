@@ -40,7 +40,46 @@ export default {
 </script>
 
 <style scoped="">
-    @media only screen and (max-width:600px){
+      .footer{
+          width: 100%;
+          position:fixed;
+          bottom:0px;
+       }
+       .footer .el-col>div{
+        width: 100%;
+        height:100%;
+        text-align: center;
+        line-height: 60px;
+      }
+      .footer .el-col>div>a{
+        text-decoration: none;
+        display:inline-block;
+        width:38px;
+        height:98%;
+        vertical-align: middle;
+      }
+      .footer .el-col>div>.shop{
+        background-image: url('./assets/imgs/Index/shop.png');
+        background-repeat: no-repeat;
+        background-size:contain; 
+      }
+      .footer .el-col>div>.category{
+        background-image: url('./assets/imgs/Index/category.png');
+        background-repeat: no-repeat;
+        background-size:contain; 
+      }
+      .footer .el-col>div>.shoping{
+        width:60px;
+        background-image: url('./assets/imgs/Index/shoping.png');
+        background-repeat: no-repeat;
+        background-size:contain; 
+      }
+      .footer .el-col>div>.person{
+        background-image: url('./assets/imgs/Index/person.png');
+        background-repeat: no-repeat;
+        background-size:contain; 
+      }
+    /*@media only screen and (max-width:600px){
       .footer .el-col>div>a{
         text-decoration: none;
         display:inline-block;
@@ -68,8 +107,8 @@ export default {
         background-repeat: no-repeat;
         background-size:contain; 
       }
-    }
-    @media only screen and (min-width:600px) and (max-width:1200px){
+    }*/
+    /*@media only screen and (min-width:600px) and (max-width:1200px){
       .footer .el-col>div>a{
         text-decoration: none;
         display:inline-block;
@@ -98,7 +137,7 @@ export default {
         background-repeat: no-repeat;
         background-size:contain; 
       }
-    }
+    }*/
 
 </style>
 <style>
@@ -111,15 +150,5 @@ export default {
     height: 100%;
     font-size: 12px;
    }
-   .footer{
-      width: 100%;
-      position:fixed;
-      bottom:10px;
-   }
-   .footer .el-col>div{
-    width: 100%;
-    height:100%;
-    text-align: center;
-    line-height: 60px;
-   }
+   
 </style>

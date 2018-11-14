@@ -2,7 +2,7 @@
   <div class="Category">
   <el-container>
 	  <el-aside style="width:30%;" class="aside">
-	  	<ul>
+	  	<ul style="overflow-y: scroll;">
 	  		<li v-for="s in ways" @click="menuclick($event)">{{s.title}}</li>
 	  	</ul>
 	  </el-aside>

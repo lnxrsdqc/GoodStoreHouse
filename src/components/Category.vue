@@ -1,18 +1,386 @@
 <template>
   <div class="Category">
+<<<<<<< HEAD
     <el-container>
 	  <el-header class="header">Header</el-header>
 	  <el-container>
 	    <el-aside style="width:15%;" class="aside">Aside</el-aside>
 	    <el-main class="main">Main</el-main>
 	  </el-container>
+=======
+  <el-container>
+	  <el-aside style="width:30%;" class="aside">
+	  	<ul style="overflow-y: scroll;">
+	  		<li v-for="s in ways" @click="menuclick($event)">{{s.title}}</li>
+	  	</ul>
+	  </el-aside>
+	  <el-main class="main">
+	  	<div v-for="s in ways">
+	  		<img src="" alt="">
+	  		<div></div>
+	  	</div>
+	  </el-main>
+>>>>>>> dev
 	</el-container>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Category'
+  name: 'Category',
+  data(){
+  	return {
+  		ways:[
+		    {
+		  		title:"家居",
+		  		mains:[{
+		  			img:"./assets/logo.png",
+		  			more:"家具"
+		  		},{
+		  			img:"./assets/logo.png",
+		  			more:"居家日用"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"装饰摆件"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"香薰香氛"
+		  		}]
+		  	},
+		  	{
+		    	title:"文具",
+		    	mains:[{
+		  			img:"./assets/logo.png",
+		  			more:"办公用品"
+		  		},{
+		  			img:"./assets/logo.png",
+		  			more:"纸本"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"手机配件"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"移动电源"
+		  		}]
+		  	},
+		    {
+		    	title:"数码",
+		    	mains:[{
+		  			img:"./assets/logo.png",
+		  			more:"耳机"
+		  		},{
+		  			img:"./assets/logo.png",
+		  			more:"音响"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"手机配件"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"移动电源"
+		  		}]
+		  	},
+		    {
+		    	title:"玩乐",
+		    	mains:[{
+		  			img:"./assets/logo.png",
+		  			more:"耳机"
+		  		},{
+		  			img:"./assets/logo.png",
+		  			more:"音响"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"手机配件"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"移动电源"
+		  		}]
+		  	},
+		  	{
+		    	title:"餐厨",
+		    	mains:[{
+		  			img:"./assets/logo.png",
+		  			more:"耳机"
+		  		},{
+		  			img:"./assets/logo.png",
+		  			more:"音响"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"手机配件"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"移动电源"
+		  		}]
+		  	},
+		  	{
+		    	title:"美食",
+		    	mains:[{
+		  			img:"./assets/logo.png",
+		  			more:"耳机"
+		  		},{
+		  			img:"./assets/logo.png",
+		  			more:"音响"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"手机配件"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"移动电源"
+		  		}]
+		  	},
+		  	{
+		    	title:"服装",
+		    	mains:[{
+		  			img:"./assets/logo.png",
+		  			more:"耳机"
+		  		},{
+		  			img:"./assets/logo.png",
+		  			more:"音响"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"手机配件"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"移动电源"
+		  		}]
+		  	},
+		  	{
+		    	title:"鞋包",
+		    	mains:[{
+		  			img:"./assets/logo.png",
+		  			more:"耳机"
+		  		},{
+		  			img:"./assets/logo.png",
+		  			more:"音响"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"手机配件"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"移动电源"
+		  		}]
+		  	},
+		  	{
+		    	title:"配饰",
+		    	mains:[{
+		  			img:"./assets/logo.png",
+		  			more:"耳机"
+		  		},{
+		  			img:"./assets/logo.png",
+		  			more:"音响"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"手机配件"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"移动电源"
+		  		}]
+		  	},
+		  	{
+		    	title:"出行",
+		    	mains:[{
+		  			img:"./assets/logo.png",
+		  			more:"耳机"
+		  		},{
+		  			img:"./assets/logo.png",
+		  			more:"音响"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"手机配件"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"移动电源"
+		  		}]
+		  	},
+		  	{
+		    	title:"图书",
+		    	mains:[{
+		  			img:"./assets/logo.png",
+		  			more:"耳机"
+		  		},{
+		  			img:"./assets/logo.png",
+		  			more:"音响"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"手机配件"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"移动电源"
+		  		}]
+		  	},
+		  	{
+		    	title:"艺术",
+		    	mains:[{
+		  			img:"./assets/logo.png",
+		  			more:"耳机"
+		  		},{
+		  			img:"./assets/logo.png",
+		  			more:"音响"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"手机配件"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"移动电源"
+		  		}]
+		  	},
+		    {
+		    	title:"水具",
+		    	mains:[{
+		  			img:"./assets/logo.png",
+		  			more:"耳机"
+		  		},{
+		  			img:"./assets/logo.png",
+		  			more:"音响"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"手机配件"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"移动电源"
+		  		}]
+		    },
+		  	{
+		    	title:"美食",
+		    	mains:[{
+		  			img:"./assets/logo.png",
+		  			more:"耳机"
+		  		},{
+		  			img:"./assets/logo.png",
+		  			more:"音响"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"手机配件"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"移动电源"
+		  		}]
+		  	},
+		  	{
+		    	title:"美食",
+		    	mains:[{
+		  			img:"./assets/logo.png",
+		  			more:"耳机"
+		  		},{
+		  			img:"./assets/logo.png",
+		  			more:"音响"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"手机配件"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"移动电源"
+		  		}]
+		  	},
+		  	{
+		    	title:"美食",
+		    	mains:[{
+		  			img:"./assets/logo.png",
+		  			more:"耳机"
+		  		},{
+		  			img:"./assets/logo.png",
+		  			more:"音响"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"手机配件"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"移动电源"
+		  		}]
+		  	},
+		  	{
+		    	title:"美食",
+		    	mains:[{
+		  			img:"./assets/logo.png",
+		  			more:"耳机"
+		  		},{
+		  			img:"./assets/logo.png",
+		  			more:"音响"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"手机配件"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"移动电源"
+		  		}]
+		  	},
+		  	{
+		    	title:"美食",
+		    	mains:[{
+		  			img:"./assets/logo.png",
+		  			more:"耳机"
+		  		},{
+		  			img:"./assets/logo.png",
+		  			more:"音响"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"手机配件"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"移动电源"
+		  		}]
+		  	},
+		  	{
+		    	title:"美食",
+		    	mains:[{
+		  			img:"./assets/logo.png",
+		  			more:"耳机"
+		  		},{
+		  			img:"./assets/logo.png",
+		  			more:"音响"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"手机配件"
+		  		},
+		  		{
+		  			img:"./assets/logo.png",
+		  			more:"移动电源"
+		  		}]
+		  	}
+  			]
+ 	 	}
+  	},
+	methods:{
+		menuclick(e){
+			console.log(e.target);
+		}
+	}
 }
 </script>
 
@@ -20,7 +388,23 @@ export default {
 .Shop{
 	text-align: center;
 }
+<<<<<<< HEAD
 .header,.aside,.main{
 	border:1px solid red;
 }
+=======
+.aside,.main{
+	border:1px solid red;
+}
+.aside ul{
+	min-height: 600px;
+	background-color: rgb(218,218,218);
+}
+.aside ul li{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+>>>>>>> dev
 </style>

@@ -1,9 +1,15 @@
 <template>
   <div id="GoodStoreHouse">
     <el-container>
+<<<<<<< HEAD
         <el-main>
           <router-view/>
         </el-main>
+=======
+        <div>
+            <router-view/>
+        </div>
+>>>>>>> dev
         <el-footer class="footer">
             <el-row type="flex" justify="space-between" :gutter="20" class="footer-nav">
               <el-col :xs="6" :sm="6" :md="6" :lg="6">
@@ -39,11 +45,12 @@ export default {
 }
 </script>
 
-<style scoped="">
+<style scoped>
     .footer{
       width: 100%;
+      background-color: white;
       position:fixed;
-      bottom:10px;
+      bottom:0px;
      }
      .footer .el-col>div{
       width: 100%;
@@ -87,8 +94,6 @@ export default {
     padding: 0;
    } 
    html:{
-    width: 100%;
-    height: 100%;
     font-size: 12px;
    }
 </style>

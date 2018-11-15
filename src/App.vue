@@ -1,8 +1,5 @@
 <template>
   <div id="GoodStoreHouse">
-    <div>
-      <router-view/>
-    </div>
     <el-container>
         <div>
           <router-view/>

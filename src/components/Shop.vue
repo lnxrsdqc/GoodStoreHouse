@@ -374,7 +374,7 @@ export default {
     }
   @media only screen and (min-width:600px) and (max-width:800px){
     .header{
-        margin-top:5px;
+        margin-top:10px;
     } 
     .header .el-row{
   	    background-color: white;

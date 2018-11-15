@@ -6,11 +6,11 @@
                 <div class="search"><el-button icon="el-icon-search">搜索</el-button></div>  
               </el-col>
             </el-row>
-			<el-row type="flex" class="middle">
+			<el-row type="flex" class="middle min-middle">
 				<el-col :xs="4" :sm="4" :md="4" :lg="4" class="first-child">
 					<div><router-link to="/Index">首页</router-link></div>
 				</el-col>
-				<el-col :xs="18" :sm="18" :md="18" :lg="18" class="second-child">
+				<el-col :xs="17" :sm="17" :md="17" :lg="17" class="second-child">
 					<ul>
 						<li><router-link to="/Water">水具</router-link></li>
 						<li><router-link to="/HouseGoods">家居</router-link></li>
@@ -31,7 +31,7 @@
 						<li><router-link to="/All">全部</router-link></li>
 					</ul>
 				</el-col>
-				<el-col :xs="2" :sm="2" :md="2" :lg="2" class="last-child">
+				<el-col :xs="3" :sm="3" :md="3" :lg="3" class="last-child">
 					<div><img src="../assets/imgs/Index/control.png" alt=""></div>	
 				</el-col>
 			</el-row>
@@ -49,268 +49,14 @@ export default {
 </script>
 
 <style scoped>
-   .header .middle{
+   .header .min-middle{
    	  width: 100%;
    	  max-height: 50px;
    	  overflow: hidden;
    }
-   /* .header{
-      margin-top:-8px;
-    }
-    .header .el-row{
-    	background-color: white;
-    }
-    .header .search{
-      width: 100%;
-      height: 40px;
-      line-height: 40px;
-      text-align: center;
-      background-color: rgb(243,243,243);
-    } 
-   .header .search>.el-button{
-   	  width: 100%;
-      height: 40px;
-      font-size: 1.2rem;
-      border: none;
-      color: rgb(153,153,153);
-      background-color: rgb(243,243,243);
-   }
-   .header .first-child>div{
-   	text-align:left;
-   }
-   .header .first-child>div>a{
-   	  width: 50px;
-   	  height: 50px;
-   	  line-height: 50px;
-   	  display: inline-block;
-   	  color: #333333;
-   	  font-size: 1.6rem;
-   	  text-decoration:none;
-   }
-   .header .second-child>ul{
-   	  list-style-type: none;
-   	  margin-top: 10px;
-   }
-   .header .second-child>ul>li{
-   	  height: 35px;
-   	  line-height: 35px;
-   	  float: left;
-   	  text-align: center;
-   	  padding: 0 5px;
-   }
-   .header .second-child>ul>li>a{
-   	  display: inline-block;
-   	  width: 100%;
-   	  height: 100%;
-   	  text-decoration: none;
-   	  color: #333333;
-   	  font-size: 1.2rem;
-   } 
-   .header .last-child>div{
-   	  width: 100%;
-   	  height: 50px;
-   	  line-height: 50px;
-   	  text-align: center;
-   } 
-   .header .last-child>div>img{
-   	  width: 30px;
-   	  margin:10px 0 0 -5px;
-   } */
-    @media only screen and (max-width: 360px){
+  @media only screen and (max-width:600px){
     .header{
-	    margin-top:-8px;
-	  }
-	.header .el-row{
-	  	background-color: white;
-	  }
-	.header .search{
-	    width: 100%;
-	    height: 40px;
-	    line-height: 40px;
-	    text-align: center;
-	    background-color: rgb(243,243,243);
-	  } 
-    .header .search>.el-button{
-     	width: 100%;
-	    height: 40px;
-	    font-size: 1.2rem;
-	    border: none;
-	    color: rgb(153,153,153);
-	    background-color: rgb(243,243,243);
-	  }
-    .header .first-child>div{
-     	text-align:left;
-     }
-    .header .first-child>div>a{
-     	width: 50px;
-     	height: 50px;
-     	line-height: 50px;
-     	display: inline-block;
-     	color: #333333;
-     	font-size: 1.6rem;
-     	text-decoration:none;
-     }
-    .header .second-child>ul{
-     	list-style-type: none;
-     	margin-top: 10px;
-     }
-    .header .second-child>ul>li{
-     	height: 35px;
-     	line-height: 35px;
-     	float: left;
-     	text-align: center;
-     	padding: 0 5px;
-    }
-    .header .second-child>ul>li>a{
-     	display: inline-block;
-     	width: 100%;
-     	height: 100%;
-     	text-decoration: none;
-     	color: #333333;
-     	font-size: 1.2rem;
-     } 
-    .header .last-child>div{
-     	width: 100%;
-     	height: 50px;
-     	line-height: 50px;
-     	text-align: center;
-     } 
-    .header .last-child>div>img{
-     	width: 30px;
-     	margin:10px 0 0 -5px;
-     }
-     }
-  @media only screen and (min-width:360px) and (max-width: 370px){
-    .header{
-        margin-top:-8px;
-	}
-	.header .el-row{
-	    background-color: white;
-	}
-	.header .search{
-	    width: 100%;
-	    height: 40px;
-	    line-height: 40px;
-	    text-align: center;
-	    background-color: rgb(243,243,243);
-	}  
-    .header .search>.el-button{
-     	width: 100%;
-        height: 40px;
-        font-size: 1.2rem;
-        border: none;
-        color: rgb(153,153,153);
-        background-color: rgb(243,243,243);
-     }
-    .header .first-child>div{
-     	text-align:left;
-     }
-    .header .first-child>div>a{
-     	width: 50px;
-     	height: 50px;
-     	line-height: 50px;
-     	display: inline-block;
-     	color: #333333;
-     	font-size: 1.8rem;
-     	text-decoration:none;
-     }
-    .header .second-child>ul{
-     	list-style-type: none;
-     	margin-top: 10px;
-     }
-    .header .second-child>ul>li{
-    height: 35px;
-    line-height: 35px;
-    float: left;
-    text-align: center;
-    padding: 0 8px;
-     }
-    .header .second-child>ul>li>a{
-     	display: inline-block;
-     	width: 100%;
-     	height: 100%;
-     	text-decoration: none;
-     	color: #333333;
-     	font-size: 1.3rem;
-     } 
-    .header .last-child>div{
-     	width: 100%;
-     	height: 50px;
-     	line-height: 50px;
-     	text-align: center;
-     } 
-    .header .last-child>div>img{
-     	width: 30px;
-     	margin:10px 0 0 -5px;
-     }
-     }
-  @media only screen and (min-width:370px) and (max-width:400px){
-    .header{
-        margin-top:-8px;
-    }
-    .header .el-row{
-  	    background-color: white;
-    }
-    .header .search{
-        width: 100%;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        background-color: rgb(243,243,243);
-    } 
-    .header .search>.el-button{
-     	width: 100%;
-        height: 40px;
-        font-size: 1.2rem;
-        border: none;
-        color: rgb(153,153,153);
-        background-color: rgb(243,243,243);
-    }
-    .header .first-child>div{
-     	text-align:left;
-     }
-    .header .first-child>div>a{
-        width: 50px;
-     	height: 50px;
-     	line-height: 50px;
-     	display: inline-block;
-     	color: #333333;
-     	font-size: 1.8rem;
-     	text-decoration:none;
-    }
-    .header .second-child>ul{
-     	list-style-type: none;
-     	margin-top: 10px;
-     }
-    .header .second-child>ul>li{
-     	height: 35px;
-     	line-height: 35px;
-     	float: left;
-     	text-align: center;
-     	padding: 0 9px;
-     }
-    .header .second-child>ul>li>a{
-     	display: inline-block;
-     	width: 100%;
-     	height: 100%;
-     	text-decoration: none;
-     	color: #333333;
-     	font-size: 1.3rem;
-     } 
-    .header .last-child>div{
-     	width: 100%;
-     	height: 50px;
-     	line-height: 50px;
-     	text-align: center;
-     } 
-    .header .last-child>div>img{
-     	width: 30px;
-     	margin:10px 0 0 -5px;
-     }
-     } 
-  @media only screen and (min-width:410px) and (max-width:600px){
-    .header{
-        margin-top:-8px;
+        margin-top:0px;
     }
     .header .el-row{
   	    background-color: white;
@@ -331,7 +77,7 @@ export default {
         background-color: rgb(243,243,243);
      }
     .header .first-child>div{
-     	text-align:left;
+     	text-align:center;
      }
     .header .first-child>div>a{
      	width: 50px;
@@ -339,19 +85,20 @@ export default {
      	line-height: 50px;
      	display: inline-block;
      	color: #333333;
-     	font-size: 1.8rem;
+     	font-size: 1.7rem;
      	text-decoration:none;
     }
     .header .second-child>ul{
      	list-style-type: none;
      	margin-top: 10px;
+     	margin-left: 5px;
     }
     .header .second-child>ul>li{
      	height: 35px;
      	line-height: 35px;
      	float: left;
      	text-align: center;
-     	padding: 0 11px;
+     	padding: 0 10px;
     }
     .header .second-child>ul>li>a{
      	display: inline-block;
@@ -359,20 +106,28 @@ export default {
      	height:100%;
      	text-decoration: none;
      	color: #333333;
-     	font-size: 1.4rem;
+     	font-size: 1.28rem;
     } 
+    .header .last-child{
+
+    }
     .header .last-child>div{
      	width: 100%;
      	height: 50px;
      	line-height: 50px;
      	text-align: center;
+     	margin:10px 0 0 -15px;
     } 
     .header .last-child>div>img{
-     	width: 30px;
-     	margin:10px 0 0 -5px;
+     	width: 30px; 	
     }
     }
   @media only screen and (min-width:600px) and (max-width:800px){
+  	.header .middle{
+   	  width: 100%;
+   	  max-height: 80px;
+   	  overflow: hidden;
+    }
     .header{
         margin-top:10px;
     } 
@@ -437,8 +192,13 @@ export default {
     }
     }
   @media only screen and (min-width:810px) and (max-width:1200px){
+  	.header .middle{
+   	  width: 100%;
+   	  max-height: 100px;
+   	  overflow: hidden;
+    }
     .header{
-        margin-top:10px;
+        margin-top:20px;
     }
     .header .el-row{
   	    background-color: white;
@@ -482,7 +242,7 @@ export default {
      	line-height: 70px;
      	float: left;
      	text-align: center;
-     	padding: 0 15px;
+     	padding: 0 13px;
     }
      .header .second-child>ul>li>a{
      	display: inline-block;

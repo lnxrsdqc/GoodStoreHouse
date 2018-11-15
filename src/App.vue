@@ -79,7 +79,7 @@ export default {
         background-repeat: no-repeat;
         background-size:contain; 
       }
-    /*@media only screen and (max-width:600px){
+    @media only screen and (max-width:600px){
       .footer .el-col>div>a{
         text-decoration: none;
         display:inline-block;
@@ -107,7 +107,7 @@ export default {
         background-repeat: no-repeat;
         background-size:contain; 
       }
-    }*/
+    }
     /*@media only screen and (min-width:600px) and (max-width:1200px){
       .footer .el-col>div>a{
         text-decoration: none;

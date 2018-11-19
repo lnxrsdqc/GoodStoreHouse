@@ -41,6 +41,7 @@ export default {
 
 <style scoped="">
       .footer{
+          z-index: 5;
           width: 100%;
           position:fixed;
           bottom:0px;

@@ -66,8 +66,7 @@ export default {
 <style scoped>
     .Shop{
     	width:100%;
-    	height:auto;
-    	padding:0 0px;
+    	height: 100%;
     	position: relative;
     }
     header{
@@ -233,7 +232,9 @@ export default {
     	background-size: contain;
      }
      section{
-     	position: relative;
+     	width: 100%;
+     	height: 100%;
+     	position: absolute;
      	top: 170px;
      }
     }

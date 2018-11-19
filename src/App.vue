@@ -1,7 +1,7 @@
 <template>
   <div id="GoodStoreHouse">
     <el-container>
-        <div>
+        <div class="main">
           <router-view/>
         </div>
         <el-footer class="footer">
@@ -39,7 +39,7 @@ export default {
 }
 </script>
 
-<style scoped="">
+<style scoped=""> 
       .footer{
           z-index: 5;
           width: 100%;

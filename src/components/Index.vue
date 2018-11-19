@@ -18,7 +18,7 @@
 	  	</el-row>
   	</div>
   	<div class="second">
-  		<div class="specialBenefit">
+  		<div class="todayTopic">
   			<el-row>
 		  		<el-col :span="24">
 		  			<div class="topick">专题</div>
@@ -33,7 +33,7 @@
 		  		</el-col>
 		  	</el-row>
   		</div>
-  				
+  		<div class="specialBenefit"></div>		
   	</div>
   </div>
 </template>
@@ -80,11 +80,11 @@ export default {
 	    min-width: 320px;
     }
     
-    @media only screen and (max-width:768px){
-    	.Index{
+    @media only screen and (max-width:600px){
+    	/*.Index{
     		max-height: 500px;
     		overflow: hidden;
-    	}
+    	}*/
     	.Index .second{
     		margin-top: 20px;
     	}
@@ -95,6 +95,38 @@ export default {
 	    .Index .topick-img>.el-col{
 	    	width: 50%;
 	    	height: 200px;
+	    	padding: 10px 0;
+	    }
+	    .Index .topick-img1{
+	    	width: 100%;
+	    	height: 100%;
+	    	background-image: url("../assets/imgs/Index/middle-17.jpg");
+	    	background-repeat: no-repeat;
+	    	background-size: contain;
+	    }
+	    .Index .topick-img2{
+	    	width: 100%;
+	    	height: 100%;
+	    	background-image: url("../assets/imgs/Index/middle-18.jpg");
+	    	background-repeat: no-repeat;
+	    	background-size: contain;
+	    }
+    }
+    @media only screen and (min-width:600px) and (max-width:800px){
+    	/*.Index{
+    		max-height: 700px;
+    		overflow: hidden;
+    	}*/
+    	.Index .second{
+    		margin-top: 20px;
+    	}
+    	.Index .topick{
+	    	font-size: 3rem;
+	    	font-weight: bold;
+	    }
+	    .Index .topick-img>.el-col{
+	    	width: 50%;
+	    	height:300px;
 	    	padding: 10px 0;
 	    }
 	    .Index .topick-img1{

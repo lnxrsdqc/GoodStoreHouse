@@ -7,10 +7,7 @@
 	  	</ul>
 	  </el-aside>
 	  <el-main class="main">
-	  	<div v-for="s in ways">
-	  		<img src="" alt="">
-	  		<div></div>
-	  	</div>
+	  	<router-view/>
 	  </el-main>
 	</el-container>
   </div>
@@ -379,11 +376,9 @@ export default {
 .Shop{
 	text-align: center;
 }
-<<<<<<< HEAD
 .header,.aside,.main{
 	border:1px solid red;
 }
-=======
 .aside,.main{
 	border:1px solid red;
 }
@@ -397,5 +392,4 @@ export default {
 	line-height: 50px;
 	text-align: center;
 }
->>>>>>> dev
 </style>

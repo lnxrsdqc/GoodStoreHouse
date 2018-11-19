@@ -20,15 +20,15 @@
   	<div class="second">
   		<div class="specialBenefit">
   			<el-row>
-		  		<el-col>
+		  		<el-col :span="24">
 		  			<div class="topick">专题</div>
 		  		</el-col>
 		  	</el-row>
-		  	<el-row>
-		  		<el-col>
+		  	<el-row class="topick-img">
+		  		<el-col :span="12" :gutter="20">
 		  			<div class="topick-img1"></div>
 		  		</el-col>
-		  		<el-col>
+		  		<el-col :span="12" :gutter="20">
 		  			<div class="topick-img2"></div>
 		  		</el-col>
 		  	</el-row>
@@ -73,17 +73,43 @@ export default {
 </script>
 
 <style scoped>
-    .Index{
-
-    }
     .Index .bannerImg{
     	width: 100%;
 	    height: auto;
 	    min-height: 190px;
 	    min-width: 320px;
     }
-    .Index .topick{
-    	font-size: 1.5rem;
-    	font-weight: bold;
+    
+    @media only screen and (max-width:768px){
+    	.Index{
+    		max-height: 500px;
+    		overflow: hidden;
+    	}
+    	.Index .second{
+    		margin-top: 20px;
+    	}
+    	.Index .topick{
+	    	font-size: 1.5rem;
+	    	font-weight: bold;
+	    }
+	    .Index .topick-img>.el-col{
+	    	width: 50%;
+	    	height: 200px;
+	    	padding: 10px 3px;
+	    }
+	    .Index .topick-img1{
+	    	width: 100%;
+	    	height: 100%;
+	    	background-image: url("../assets/imgs/Index/middle-17.jpg");
+	    	background-repeat: no-repeat;
+	    	background-size: contain;
+	    }
+	    .Index .topick-img2{
+	    	width: 100%;
+	    	height: 100%;
+	    	background-image: url("../assets/imgs/Index/middle-18.jpg");
+	    	background-repeat: no-repeat;
+	    	background-size: contain;
+	    }
     }
 </style>

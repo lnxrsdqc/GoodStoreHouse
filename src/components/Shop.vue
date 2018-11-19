@@ -67,6 +67,7 @@ export default {
     .Shop{
     	width:100%;
     	height:auto;
+    	padding:0 0px;
     }
     header{
     	z-index: 5;

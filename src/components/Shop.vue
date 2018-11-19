@@ -68,6 +68,7 @@ export default {
     	width:100%;
     	height:auto;
     	padding:0 0px;
+    	position: relative;
     }
     header{
     	z-index: 5;
@@ -149,7 +150,9 @@ export default {
     	background-size: contain;
      }
      section{
-     	position: relative;
+     	width: 100%;
+     	height: 100%;
+     	position: absolute;
      	top: 90px;
      }
     }

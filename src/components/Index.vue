@@ -24,11 +24,11 @@
 		  			<div class="topick">专题</div>
 		  		</el-col>
 		  	</el-row>
-		  	<el-row class="topick-img">
-		  		<el-col :span="12" :gutter="20">
+		  	<el-row class="topick-img" :gutter="10">
+		  		<el-col :span="12">
 		  			<div class="topick-img1"></div>
 		  		</el-col>
-		  		<el-col :span="12" :gutter="20">
+		  		<el-col :span="12">
 		  			<div class="topick-img2"></div>
 		  		</el-col>
 		  	</el-row>
@@ -95,7 +95,7 @@ export default {
 	    .Index .topick-img>.el-col{
 	    	width: 50%;
 	    	height: 200px;
-	    	padding: 10px 3px;
+	    	padding: 10px 0;
 	    }
 	    .Index .topick-img1{
 	    	width: 100%;

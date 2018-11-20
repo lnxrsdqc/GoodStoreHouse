@@ -26,10 +26,10 @@
 		  	</el-row>
 		  	<el-row class="topick-img" :gutter="10">
 		  		<el-col :span="12">
-		  			<div class="topick-img1"></div>
+		  			<img src="../assets/imgs/Index/middle-17.jpg" alt="" class="topick-img1">
 		  		</el-col>
 		  		<el-col :span="12">
-		  			<div class="topick-img2"></div>
+		  			<img src="../assets/imgs/Index/middle-18.jpg" alt="" class="topick-img2">
 		  		</el-col>
 		  	</el-row>
   		</div>
@@ -79,69 +79,23 @@ export default {
 	    min-height: 190px;
 	    min-width: 320px;
     }
-    
-    @media only screen and (max-width:600px){
-    	/*.Index{
-    		max-height: 500px;
-    		overflow: hidden;
-    	}*/
-    	.Index .second{
-    		margin-top: 20px;
-    	}
-    	.Index .topick{
-	    	font-size: 1.5rem;
-	    	font-weight: bold;
-	    }
-	    .Index .topick-img>.el-col{
-	    	width: 50%;
-	    	height: 200px;
-	    	padding: 10px 0;
-	    }
-	    .Index .topick-img1{
-	    	width: 100%;
-	    	height: 100%;
-	    	background-image: url("../assets/imgs/Index/middle-17.jpg");
-	    	background-repeat: no-repeat;
-	    	background-size: contain;
-	    }
-	    .Index .topick-img2{
-	    	width: 100%;
-	    	height: 100%;
-	    	background-image: url("../assets/imgs/Index/middle-18.jpg");
-	    	background-repeat: no-repeat;
-	    	background-size: contain;
-	    }
+	.Index .second{
+		margin-top: 20px;
+	}
+	.Index .topick{
+    	font-size: 1.5rem;
+    	font-weight: bold;
     }
-    @media only screen and (min-width:600px) and (max-width:800px){
-    	/*.Index{
-    		max-height: 700px;
-    		overflow: hidden;
-    	}*/
-    	.Index .second{
-    		margin-top: 20px;
-    	}
-    	.Index .topick{
-	    	font-size: 3rem;
-	    	font-weight: bold;
-	    }
-	    .Index .topick-img>.el-col{
-	    	width: 50%;
-	    	height:300px;
-	    	padding: 10px 0;
-	    }
-	    .Index .topick-img1{
-	    	width: 100%;
-	    	height: 100%;
-	    	background-image: url("../assets/imgs/Index/middle-17.jpg");
-	    	background-repeat: no-repeat;
-	    	background-size: contain;
-	    }
-	    .Index .topick-img2{
-	    	width: 100%;
-	    	height: 100%;
-	    	background-image: url("../assets/imgs/Index/middle-18.jpg");
-	    	background-repeat: no-repeat;
-	    	background-size: contain;
-	    }
+    .Index .topick-img>.el-col{
+    	width: 50%;
+    	text-align: center;
+    }
+    .Index .topick-img1{
+    	width: 100%;
+    	height: 100%;
+    }
+    .Index .topick-img2{
+    	width: 100%;
+    	height: 100%;
     }
 </style>

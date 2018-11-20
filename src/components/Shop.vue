@@ -1,16 +1,16 @@
 <template>
   <div class="Shop">
 		<header class="header">
-			<el-row type="flex">
-              <el-col :xs="24" :sm="24" :md="24" :lg="24">
-                <div class="search"><el-button icon="el-icon-search">搜索</el-button></div>  
-              </el-col>
+			<el-row type="flex"class="search-row">
+              <el-col :xs="24" :sm="24" :md="24" :lg="24" class="search-col">
+                  <el-button icon="el-icon-search">搜索</el-button>  
+              </el-col> 
             </el-row>
-			<el-row type="flex" id="middle" :class="flag?classA:classB">
-				<el-col :xs="4" :sm="4" :md="4" :lg="4" class="first-child">
+			<el-row type="flex" id="middle-row" :class="flag?classA:classB">
+				<el-col :xs="4" :sm="3" :md="3" :lg="3" :xl="3" class="first-child">
 					<div><router-link to="/Index">首页</router-link></div>
 				</el-col>
-				<el-col :xs="18" :sm="18" :md="17" :lg="17" class="second-child">
+				<el-col :xs="18" :sm="18" :md="18" :lg="18" class="second-child">
 					<ul @click="">
 						<li><router-link to="/Water">水具</router-link></li>
 						<li><router-link to="/HouseGoods">家居</router-link></li>
@@ -70,74 +70,76 @@ export default {
     	position: relative;
     }
     header{
+    	width: 100%;
     	z-index: 5;
     	position: fixed;
-    	top: 0px; 
+    	top: 0px;
+     	background-color: white; 
     }
-   .header .min-middle{
-   	  width: 100%;
-   	  max-height: 50px;
-   	  overflow: hidden;
-   }
-   .header .max-middle{
-      width: 100%;	
-   }
-  @media only screen and (max-width:600px){
-    .header .el-row{
-  	    background-color: white;
+    .header .min-middle{
+   	    width: 100%;
+   	    max-height: 45px;
+   	    overflow: hidden;
     }
-    .header .search{
-        width: 100%;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        background-color: rgb(243,243,243);
-    } 
-    .header .search>.el-button{
+    .header .max-middle{
+       width: 100%;	
+    }
+    .header .search-row .search-col{
+    	width: 100%;
+    	height: 100%;
+    }
+    .header .search-row .el-button{
      	width: 100%;
-        height: 40px;
-        font-size: 1.2rem;
+        height:100%;
+        font-size: 1.6rem;
         border: none;
         color: rgb(153,153,153);
         background-color: rgb(243,243,243);
      }
-    .header .first-child>div{
-     	text-align:center;
-     }
-    .header .first-child>div>a{
-     	width: 50px;
-     	height: 50px;
-     	line-height: 50px;
-     	display: inline-block;
-     	color: #333333;
-     	font-size: 1.7rem;
-     	text-decoration:none;
-    }
-    .header .second-child>ul{
-     	list-style-type: none;
+     .header #middle-row{
+     	width: 100%;
+     	height: 100%;
      	margin-top: 10px;
-     	padding-left: 10px;
-    }
-    .header .second-child>ul>li{
-     	height: 35px;
-     	line-height: 35px;
-     	float: left;
-     	text-align: center;
-     	padding: 0 10px;
-    }
-    .header .second-child>ul>li>a{
-     	display: inline-block;
+     }
+     .header .first-child>div{
      	width: 100%;
-     	height:100%;
-     	text-decoration: none;
+     	height: 100%;
+     	text-align:left;
+     	line-height:45px;
+     }
+    .header .first-child>div>a{
+     	width: 100%;
+     	height: 100%;
+     	display:block;
      	color: #333333;
-     	font-size: 1.28rem;
+     	font-size: 2rem;
+     	text-decoration:none;
     }
-    .header .last-child>#dropDown{
-     	width: 100%;
-     	height: 30px;
-     	margin:10px 0 0 -5px;
-    } 
+     .header .second-child>ul{
+       	list-style-type: none;
+      }
+      .header .second-child>ul>li{
+      	width: 20%;
+       	height:100%;
+       	line-height: 45px;
+       	float: left;
+       	text-align: center;
+      }
+      .header .second-child>ul>li>a{
+       	display:block;
+       	width: 100%;
+       	height:100%;
+       	text-decoration: none;
+       	color: #333333;
+       	font-size: 1.5rem;
+      }
+      .header .last-child>#dropDown{
+       	width: 80%;
+       	height:35px;
+       	margin: 4px 0;
+       	position: relative;
+       	right: 0;
+      }   
     .header .last-child>.top{
     	background-image: url("../assets/imgs/Index/top.png");
     	background-repeat: no-repeat;
@@ -150,178 +152,9 @@ export default {
      }
      section{
      	width: 100%;
-     	height: 100%;
-     	position: absolute;
-     	top: 90px;
-     }
-    }
-  @media only screen and (min-width:600px) and (max-width:800px){
-    .header .min-middle{
-   	  width: 100%;
-   	  max-height: 80px;
-   	  overflow: hidden;
-   }
-   .header .max-middle{
-      width: 100%;	
-   }
-    .header .el-row{
-  	    background-color: white;
-    }
-    .header .search{
-        width: 100%;
-        height: 80px;
-        line-height: 80px;
-        text-align: center;
-        background-color: rgb(243,243,243);
-    }  
-    .header .search>.el-button{
-     	width: 100%;
-        height: 80px;
-        font-size: 2.8rem;
-        border: none;
-        color: rgb(153,153,153);
-        background-color: rgb(243,243,243);
-    }
-    .header .first-child>div{
-     	text-align:center;
-     	margin-top: 20px;
-     }
-    .header .first-child>div>a{
-     	width:100%;
-     	height: 50px;
-     	line-height: 50px;
-     	display: inline-block;
-     	color: #333333;
-     	font-size: 3.8rem;
-     	text-decoration:none;
-     }
-    .header .second-child>ul{
-     	list-style-type: none;
-     	margin-top: 20px;
-     	padding-left: 15px;
-     }
-    .header .second-child>ul>li{
-     	width: 100px;
-     	height: 60px;
-     	line-height: 60px;
-     	float: left;
-     	text-align: center;
-     	padding: 0 4px;
-     }
-    .header .second-child>ul>li>a{
-     	display: inline-block;
-     	width: 100%;
-     	height:100%;
-     	text-decoration: none;
-     	color: #333333;
-     	font-size: 2.4rem;
-    } 
-    .header .last-child>#dropDown{
-     	width: 100%;
-     	height: 60px;
-     	margin:15px 0 0 0;
-    }
-    .header .last-child>.top{
-    	background-image: url("../assets/imgs/Index/top.png");
-    	background-repeat: no-repeat;
-    	background-size: contain;
-    }
-    .header .last-child>.bottom{
-    	background-image: url("../assets/imgs/Index/control.png");
-    	background-repeat: no-repeat;
-    	background-size: contain;
-     }
-     section{
-     	width: 100%;
-     	height: 100%;
-     	position: absolute;
-     	top: 170px;
-     }
-    }
-  @media only screen and (min-width:810px) and (max-width:1200px){
-    .header .min-middle{
-   	  width: 100%;
-   	  max-height: 100px;
-   	  overflow: hidden;
-   }
-   .header .max-middle{
-      width: 100%;	
-   }
-    .header .el-row{
-  	    background-color: white;
-    }
-    .header .search{
-        width: 100%;
-        height: 100px;
-        line-height: 100px;
-        text-align: center;
-        background-color: rgb(243,243,243);
-    } 
-    .header .search>.el-button{
-     	width: 100%;
-        height: 100px;
-        font-size: 3rem;
-        border: none;
-        color: rgb(153,153,153);
-        background-color: rgb(243,243,243);
-    }
-    .header .first-child>div{
-     	text-align:center;
-     	margin-top: 20px;
-    }
-    .header .first-child>div>a{
-     	width:100%;
-     	height: 50px;
-     	line-height: 50px;
-     	display: inline-block;
-     	color: #333333;
-     	font-size: 4.4rem;
-     	text-decoration:none;
-    }
-    .header .second-child>ul{
-     	list-style-type: none;
-     	margin-top: 20px;
-        padding-left: 10px;
-    }
-    .header .second-child>ul>li{
-     	width: 110px;
-     	height: 70px;
-     	line-height: 70px;
-     	float: left;
-     	text-align: center;
-     	padding: 0 16px;
-    }
-     .header .second-child>ul>li>a{
-     	display: inline-block;
-     	width: 100%;
-     	height:100%;
-     	text-decoration: none;
-     	color: #333333;
-     	font-size: 3.4rem;
-     } 
-     .header .last-child{
-     	position: relative;
-     }
-     .header .last-child>#dropDown{
-     	width: 60%;
-     	height: 70px;
-     	margin-top:15px;
-     	position: absolute;
-     	right: 5px;
-     }
-     .header .last-child>.top{
-    	background-image: url("../assets/imgs/Index/top.png");
-    	background-repeat: no-repeat;
-    	background-size: contain;
-    }
-    .header .last-child>.bottom{
-    	background-image: url("../assets/imgs/Index/control.png");
-    	background-repeat: no-repeat;
-    	background-size: contain;
-     }
-     section{
-     	position: relative;
-     	top: 210px;
-     }
+     	position:absolute;
+     	top: 105px;
+     	max-height: 1300px;
+     	overflow: hidden;
      }
 </style>

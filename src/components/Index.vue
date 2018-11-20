@@ -29,11 +29,71 @@
 		  			<img src="../assets/imgs/Index/middle-17.jpg" alt="" class="topick-img1">
 		  		</el-col>
 		  		<el-col :span="12">
-		  			<img src="../assets/imgs/Index/middle-18.jpg" alt="" class="topick-img2">
+		  			<img src="../assets/imgs/Index/middle-18.jpg" alt="" class="topick-img1">
 		  		</el-col>
 		  	</el-row>
   		</div>
-  		<div class="specialBenefit"></div>		
+  		<div class="specialBenefit">
+  			<el-row>
+		  		<el-col :span="24">
+		  			<div class="todayBenefit">今日特惠</div>
+		  		</el-col>
+		  	</el-row>
+		  	<el-row class="todayBenefit-img" :gutter="10">
+		  		<el-col :span="12">
+		  			<div>
+		  			    <img src="../assets/imgs/Index/Benefit-1.jpg" alt="" class="todayBenefit-img1">	
+		  			    <p class="desc">天然配方 口感甘醇熬夜茶</p>
+		  			    <p><span>¥238</span><s>¥259</s></p>
+		  			</div>
+		  		</el-col>
+		  		<el-col :span="12">
+		  			<div>
+		  				<img src="../assets/imgs/Index/Benefit-2.jpg" alt="" class="todayBenefit-img1">
+		  				<p class="desc">优选珍贵 大马士革玫瑰茶</p>
+		  				<p><span>¥208</span><s>¥219</s></p>
+		  			</div>	
+		  		</el-col>
+		  	</el-row>
+  		</div>
+  		<div class="todayTopic">
+  			<el-row>
+		  		<el-col :span="24">
+		  			<div class="topick">专题</div>
+		  		</el-col>
+		  	</el-row>
+		  	<el-row class="topick-img" :gutter="10">
+		  		<el-col :span="12">
+		  			<img src="../assets/imgs/Index/today-2.1.jpg" alt="" class="topick-img1">
+		  		</el-col>
+		  		<el-col :span="12">
+		  			<img src="../assets/imgs/Index/today-2.2.jpg" alt="" class="topick-img1">
+		  		</el-col>
+		  	</el-row>
+  		</div>
+  		<div class="specialBenefit">
+  			<el-row>
+		  		<el-col :span="24">
+		  			<div class="todayBenefit">新品速递</div>
+		  		</el-col>
+		  	</el-row>
+		  	<el-row class="todayBenefit-img" :gutter="10">
+		  		<el-col :span="12">
+		  			<div>
+		  			    <img src="../assets/imgs/Index/Benefit-1.jpg" alt="" class="todayBenefit-img1">	
+		  			    <p class="desc">意式浪漫 半自动咖啡机</p>
+		  			    <p><span>¥238</span><s>¥259</s></p>
+		  			</div>
+		  		</el-col>
+		  		<el-col :span="12">
+		  			<div>
+		  				<img src="../assets/imgs/Index/Benefit-2.jpg" alt="" class="todayBenefit-img1">
+		  				<p class="desc">能净化空气的智能加湿器</p>
+		  				<p><span>¥208</span><s>¥219</s></p>
+		  			</div>	
+		  		</el-col>
+		  	</el-row>
+  		</div>		
   	</div>
   </div>
 </template>
@@ -66,7 +126,7 @@ export default {
   },
   mounted(){
     window.addEventListener('resize', () => {
-	  this.imgHeight = this.$refs.image[0].height
+	  this.imgHeight = this.$refs.image[0].height;
 	}, false)
   }
 }
@@ -80,22 +140,43 @@ export default {
 	    min-width: 320px;
     }
 	.Index .second{
+		margin-top: 10px;
+	}
+	.todayTopic .topick{
 		margin-top: 20px;
 	}
-	.Index .topick{
-    	font-size: 1.5rem;
+	.todayTopic :first-child>.el-col>div,.specialBenefit .todayBenefit{
+    	font-size: 2rem;
     	font-weight: bold;
     }
-    .Index .topick-img>.el-col{
+    .specialBenefit .todayBenefit{
+    	margin-top: 20px;
+    }
+    .todayTopic .topick-img,.specialBenefit .todayBenefit-img{
+    	margin-top: 10px;
+    }
+    .second .topick-img>.el-col,.second .todayBenefit-img>.el-col{
     	width: 50%;
     	text-align: center;
     }
-    .Index .topick-img1{
+    .second .topick-img1,.second .todayBenefit-img1{
     	width: 100%;
     	height: 100%;
     }
-    .Index .topick-img2{
-    	width: 100%;
-    	height: 100%;
+    .second .todayBenefit-img div>.desc{
+    	text-align: center;
+    	font-size: 1.29rem;
+    }
+    .second .todayBenefit-img div>:last-child{
+    	text-align: center;
+    	margin-top:5px;
+    }
+    .second .todayBenefit-img div>:last-child>span{
+    	color: #5781d0;
+    	font-size: 1.2rem;
+    	margin-right:8px;	
+    }
+    .second .todayBenefit-img div>:last-child>s{
+    	color: rgb(153, 153, 153);
     }
 </style>

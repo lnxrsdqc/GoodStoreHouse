@@ -5,23 +5,23 @@
           <router-view/>
         </div>
         <el-footer class="footer">
-            <el-row type="flex" justify="space-between" class="footer-nav">
-              <el-col :xs="6" :sm="6" :md="6" :lg="6" :xl="6"> 
+            <el-row type="flex" justify="space-around" class="footer-nav">
+              <el-col :span="4">  
                 <div>
                   <router-link to="/" class="shop"></router-link>  
                 </div>
               </el-col>
-              <el-col :xs="6" :sm="6" :md="6" :lg="6" :xl="6">
+              <el-col :span="4" :offset="2">
                 <div>
                   <router-link to="/Category" class="category"></router-link>
                 </div> 
               </el-col>
-              <el-col :xs="6" :sm="6" :md="6" :lg="6" :xl="6">
+              <el-col :span="4" :offset="2">
                 <div> 
                   <router-link to="/Shoping" class="shoping"></router-link>  
                 </div> 
               </el-col>
-              <el-col :xs="6" :sm="6" :md="6" :lg="6" :xl="6">
+              <el-col :span="4" :offset="2">
                 <div>   
                   <router-link to="/Person" class="person"></router-link>  
                 </div>  
@@ -41,7 +41,7 @@ export default {
 
 <style scoped=""> 
       .footer{
-          z-index: 5;
+          z-index:5;
           width: 100%;
           position:fixed;
           bottom:0px; 

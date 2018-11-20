@@ -151,10 +151,11 @@ export default {
     	background-size: contain;
      }
      section{
+     	padding-bottom: 80px; 
      	width: 100%;
      	position:absolute;
      	top: 105px;
      	max-height: 1300px;
-     	overflow: hidden;
+     	overflow-y: auto;
      }
 </style>

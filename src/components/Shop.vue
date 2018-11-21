@@ -52,6 +52,9 @@ export default {
   		classB:"min-middle",
   		classC:"bottom",
   		classD:"top"
+  		// screenWidth:"1200px",
+  		// x:0,
+  		// s:24
   	}
   },
   methods:{
@@ -60,6 +63,29 @@ export default {
   	},
 
   }
+  /*mounted(){
+  	const that=this;
+  	window.onresize =()=>{
+		window.screenWidth=document.body.clientWidth;
+		if(window.screenWidth>that.screenWidth){
+			that.s=18;
+			that.x=3;
+		}
+  	}
+  },*/
+  /*watch:{
+  	screenWidth(val){
+  		if(!this.timer){
+  			this.screenWidth=val
+  			this.timer=true
+  			let that=this
+  			setTimeOut(function(){
+  				console.log(that,screenWidth)
+  				that.timer=false
+  			},400)
+  		}
+  	}
+  }*/
 }
 </script>
 
@@ -70,6 +96,8 @@ export default {
     	position: relative;
     }
     header{
+    	/*margin: auto;
+    	max-width: 1200px;*/
     	width: 100%;
     	z-index: 5;
     	position: fixed;
@@ -151,11 +179,10 @@ export default {
     	background-size: contain;
      }
      section{
+     	padding-top:105px;
      	padding-bottom: 80px; 
      	width: 100%;
-     	position:absolute;
-     	top: 105px;
-     	max-height: 1300px;
-     	overflow-y: auto;
+     	max-width: 1200px;
+     	margin: auto;
      }
 </style>

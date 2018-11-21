@@ -135,12 +135,12 @@
 		  	</el-row>
 		  	<el-row>
 		  		<el-col :span="24">
-		  			<img src="../assets/imgs/Index/射手座.jpg" alt="" class="sagittarius">
+		  			<div class="newdesc">这些礼物不会让TA失望</div>
 		  		</el-col>
 		  	</el-row>
 		  	<el-row>
 		  		<el-col :span="24">
-		  			<div class="newdesc">这些礼物不会让TA失望</div>
+		  			<img src="../assets/imgs/Index/射手座.jpg" alt="" class="sagittarius">
 		  		</el-col>
 		  	</el-row>
 		  	<el-row class="new-img" :gutter="10">
@@ -225,7 +225,7 @@ export default {
     	font-size: 2rem;
     	font-weight: bold;
     }
-    .specialBenefit .todayBenefit{
+    .specialBenefit .todayBenefit,.newGoods{
     	margin-top: 20px;
     }
     .todayTopic .topick-img,.specialBenefit .todayBenefit-img,.newGoods .new,.newGoods .new-img{
@@ -240,7 +240,7 @@ export default {
     	height: 100%;
     }
     .second .todayBenefit-img div>.desc,.newGoods .new-img .desc{
-    	text-align: center;
+    	text-align:left;
     	font-size: 1.29rem;
     	max-width: 100%;
     	overflow: hidden;
@@ -248,7 +248,7 @@ export default {
     	text-overflow: ellipsis;
     }
     .second .todayBenefit-img div>:last-child,.newGoods .new-img div>:last-child{
-    	text-align: center;
+    	text-align: left;
     	margin-top:5px;
     }
     .second .todayBenefit-img div>:last-child>span,.newGoods .new-img div>:last-child>span{
@@ -268,6 +268,7 @@ export default {
     	color: #999999;
     	font-size:1.8rem;
     	text-align: center; 
+    	margin-top: 20px;
     }
     .second .sagittarius{
     	width: 100%;

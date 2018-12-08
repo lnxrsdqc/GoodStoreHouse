@@ -3,7 +3,7 @@
     <el-container>
         <div class="main">
           <router-view/>
-        <div>
+        </div>
         <el-footer class="footer">
             <el-row type="flex" justify="space-around" class="footer-nav">
               <el-col :span="4">  
